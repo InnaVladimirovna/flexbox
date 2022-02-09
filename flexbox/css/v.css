@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+}
+.main{
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    background: white;
+    padding: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0.4);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+nav ul a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s linear;
+}
+nav ul a:hover{
+    color: gray;
+    border-bottom-color: grey;
+}
+nav ul li{
+    margin-left: 30px;
+}
+header{
+    height: 500px;
+    background: url(../img/men.jfif) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    animation: left 0.5s ease-out 0.3s;
+}
+header h2{
+    animation: right 0.5s ease-out 0.8s;
+}
+@keyframes left {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+@keyframes right {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+.aabout{
+    font-size: 60px;
+    text-align: center;
+    margin: 60px;
+}
+.row{
+    flex-wrap: wrap;
+    display: flex;
+}
+.column-2{
+    flex: 0 0 50%;
+}
+.column-3{
+    flex: 0 0 33%;
+}
+
+.portfolio-item img{
+max-width: 100%;
+height: auto;
+}

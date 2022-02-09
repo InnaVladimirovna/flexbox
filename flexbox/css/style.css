@@ -1,0 +1,125 @@
+.flex{
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    align-items: center;
+}   
+.flex div {
+    
+    background:#039;
+    border-radius:5px;
+    padding:5px;
+    margin-left:10px;}
+    .flex div:first-child {
+        order: 3;
+        flex-grow: 0;
+    background:#090;}
+    .flex div:last-child {
+        order: 0;
+        flex-grow: 2;
+    background:#C00;
+    }
+    .flex div:nth-child(2){
+        order: 2;
+    }
+    .flex div:nth-child(3){
+        order: 4;
+    }
+.piramida{
+    display: flex;
+    height: 300px;
+    background: wheat;
+    justify-content: space-around;
+    align-items: center;
+}
+.piramida div{
+    width: 50px;
+    height: 50px;
+    background: yellow;
+}
+.piramida div:nth-child(3){
+    align-self: flex-start;
+}
+.piramida div:nth-child(1), .piramida div:nth-child(5){
+align-self: flex-end;
+}
+.blue{
+    height: 300px;
+    width: 300px;
+    background: blue;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.yellow{
+    height: 200px;
+    width: 200px;
+    background: yellow;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.pink{
+    height: 100px;
+    width: 100px;
+    background: pink;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.grow{
+    height: 200px;
+    width: 200px;
+    background: seashell;
+    border-radius: 10px;
+    flex-direction: column;
+    display: flex;
+}
+.grow div{
+    border-radius: 50px;
+    min-height: 20px;
+    min-width: 20px;
+    background: silver;
+}
+.grow div:first-child, :nth-child(4){
+    align-self: center;
+    justify-content: space-around;
+}
+.new{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    background: cornflowerblue;
+    border-radius: 10px;
+}
+.one div, .two div{
+min-height: 20px;
+min-width: 20px;
+border-radius: 50px;
+background: darkturquoise;
+}
+.one{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.two{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.sport-list{
+display: flex;
+flex-direction: column;
+}
+.sport-list div{
+    background: green;
+    padding: 10px;
+}
+.sort:checked, .sport-list{
+    flex-direction: column-reverse;
+}

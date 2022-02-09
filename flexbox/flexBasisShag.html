@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 20px 0;
+            font-family: Montserrat, Arial, sans-serif;
+            font-weight: 500;
+        }
+        .row {
+            display: flex;
+            width: 1000px;
+            margin: auto;
+            outline: 2px solid #666;
+        }
+        .column {
+            flex-basis: 200px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            background-color: #f90;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .column:nth-child(2) {background-color: #ff0;
+            flex-basis: 10%;}
+        .column:nth-child(3) {background-color: #9f9;
+            flex-basis: 10%;
+            min-width: 300px;}
+        .column:nth-child(4) {background-color: #0aa;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="row">
+        <div class="column">
+            <h2>Column 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, eaque sapiente quidem officia rem hic deleniti, recusandae maxime assumenda facere in! Blanditiis facilis dicta similique nesciunt voluptate iusto hic nulla?</p>
+        </div>
+        <div class="column">
+            <h2>Column 2</h2>
+            <p>Cum perferendis non debitis fuga deleniti libero commodi magnam. Necessitatibus totam doloremque quos temporibus quisquam unde ad. Numquam eaque ad aliquam minima fugit, minus hic sapiente rem !</p>
+        </div>
+        <div class="column">
+            <h2>Column 3</h2>
+            <p>Reprehenderit qui iste accusamus, corrupti, dolore vel tempore quaerat blanditiis numquam vero nemo! Voluptatum, quo obcaecati. Similique, hic voluptate. Blanditiis facere possimus asperiores atque voluptatibus nobis iure, in quos?</p>
+        </div>
+        <div class="column">
+            <h2>Column 4</h2>
+            <p>Accusantium non tempore tempora mollitia perferendis, ea sapiente sunt at iste sint sed cum necessitatibus! Maiores eum, consequatur esse nisi cumque aliquam minima quae sed excepturi hic exercitationem quisquam? Quia.</p>
+        </div>
+    </div>
+</main>
+</body>
+</html>
